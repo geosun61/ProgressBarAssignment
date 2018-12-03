@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ProgressBarAssignment</string>
+    <string name="random_string">This is a random string that is printed on the screen. This not a random string this a cry for help.</string>
+    <string name="start_download">Start Download</string>
+</resources>
