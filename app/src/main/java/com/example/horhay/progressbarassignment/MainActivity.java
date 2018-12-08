@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                                 public void run() {
                                     //setProgress() sets the current value of the progressBar to an integer
                                     progressBar.setProgress(progressStatus);
-                                    
+
                                     //getMax() gets the maximum value of the progressBar
                                     // and returns it as an integer value
                                     textView.setText(progressStatus+"/"+progressBar.getMax());
@@ -68,16 +68,18 @@ public class MainActivity extends AppCompatActivity {
                                 e.printStackTrace();
                             }
 
+
                         }
                         //progress status resets once it reaches
                         // the value of progressBar.getMax() which is 100
                         if(progressStatus == progressBar.getMax()){
-                            progressBar.setVisibility(View.GONE);
+                            progressBar.setVisibility(View.INVISIBLE);
                             progressStatus = 0;
                         }
                     }
                 }).start();
             }
         });
+
     }
 }
